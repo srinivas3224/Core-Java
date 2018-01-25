@@ -1,10 +1,9 @@
 class C
 {
-
-	static {
-		System.out.println(" This is Static Block C");
+	static
+	{
+		System.out.println("this is static block C");
 	}
-
-
- 
+	
+	
 }
