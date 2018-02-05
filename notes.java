@@ -203,5 +203,76 @@ public static void main(String args[])
 new Child();
 }
 }
+parent class instance method:
+class Parent 
+{
+	Parent()
+	{
+	
+	System.out.println(" this is parent class constructor");
+    }
+	{
+		System.out.println(" this is parent class instance mehod");
+	}
+} 
+
+class Child extends Parent
+{
+	Child()
+	{
+	//super()
+	System.out.println(" this is child class constructor");
+    }
+	{
+		System.out.println(" this is child class instance mehod");
+	}
+	public static void main(String[] args)
+	{
+		Child c=new Child(); 
+		new Child();
+	}
+}
+
+=================================
+static methods:
+class Parent 
+{
+	Parent()
+	{
+	
+	System.out.println(" this is parent class constructor");
+    }
+	{
+		System.out.println(" this is parent class instance block");
+	}
+	static
+		{
+		System.out.println(" this is parent class static block");
+	}
+} 
+
+class Child extends Parent
+{
+	Child()
+	{
+	//super()
+	System.out.println(" this is child class constructor");
+    }
+	{
+		System.out.println(" this is child class instance block");
+	}
+	static
+	{
+		System.out.println(" this is child class static block");
+	}
+
+	public static void main(String[] args)
+	{
+		Child c=new Child(); 
+		new Child();
+		new Child();
+		new Child();
+	}
+}
 
 
