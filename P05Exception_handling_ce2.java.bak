@@ -1,0 +1,10 @@
+import java.io.*;
+class Test 
+{
+	public static void main(String[] args) throws FileNotFoundException 
+	{
+		PrintWriter pw=new PrintWriter("MVR.txt");
+		pw.print("Hello World!");
+		System.out.println(10/0);
+	}
+}
